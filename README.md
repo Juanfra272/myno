@@ -1,12 +1,2 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Descripción de Myno] 
+     es una aplicación web B2B diseñada para conectar a proveedores de la empresa Myno con pequeñas y medianas empresas, especialmente minimarkets, facilitando la compra de productos esenciales para su operación. La plataforma integra algoritmos de \textit{machine learning} para analizar el historial de compra de los clientes y generar recomendaciones personalizadas de productos similares o complementarios. Su enfoque tecnológico y orientación a datos permite a las empresas optimizar su gestión de inventario, descubrir nuevas oportunidades de venta y fortalecer su rentabilidad mediante insights accionables. La interfaz intuitiva, combinada con funcionalidades adaptadas a las necesidades B2B, posiciona a nuestro software como una herramienta estratégica en la digitalización de la cadena de suministro para negocios minoristas.
