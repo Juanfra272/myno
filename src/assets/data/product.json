@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "name": "Caja de Redbull (12 latas)",
+      "price": 15000,
+      "stock": 20,
+      "image": "/public/images/redbull.jpeg",
+      "category": "energizantes"
+    },
+    {
+      "id": 2,
+      "name": "Pack Monster (6 unidades)",
+      "price": 18000,
+      "stock": 15,
+      "image": "/public/images/monster.jpg",
+      "category": "energizantes"
+    }
+  ]
