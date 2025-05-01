@@ -37,7 +37,7 @@ export const ProductList = () => {
                   alt={product.name}
                   className="max-h-full max-w-full object-contain"
                   onError={(e) => {
-                    e.target.src = '/images/placeholder.png';
+                    e.target.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2NjYyI+PHBhdGggZD0iTTE5IDVIMWEyIDIgMCAwMC0yIDJ2MTRhMiAyIDAgMDAyIDJoMThhMiAyIDAgMDAyLTJWN2EyIDIgMCAwMC0yLTJ6bTAgMTZIMVY3aDE4djE0ek0xMSAxNUw1IDl2MTBoMTRWOWwtNiA2eiIvPjwvc3ZnPg==';
                     e.target.className = 'max-h-full max-w-full object-cover';
                   }}
                 />
