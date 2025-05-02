@@ -10,7 +10,12 @@ export const ProductList = () => {
     const loadProducts = async () => {
       try {
         const response = await import('../data/product.json');
-        setProducts(response.default || response);
+        // Asegurar que las rutas sean absolutas
+        const processedProducts = (response.default || response).map(product => ({
+          ...product,
+          image: new URL(product.image, import.meta.url).href
+        }));
+        setProducts(processedProducts);
       } catch (error) {
         console.error("Error cargando productos:", error);
         setProducts([]);
@@ -26,7 +31,7 @@ export const ProductList = () => {
   if (products.length === 0) return <div className="text-center pt-8">No hay productos disponibles</div>;
 
   return (
-    <div className="flex justify-center pt-16"> {/* Cambiado min-h-screen por pt-8 */}
+    <div className="flex justify-center pt-16">
       <div className="w-full max-w-4xl px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
           {products.map((product) => (
@@ -37,6 +42,7 @@ export const ProductList = () => {
                   alt={product.name}
                   className="max-h-full max-w-full object-contain"
                   onError={(e) => {
+                    // Fallback a SVG si la imagen no carga
                     e.target.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2NjYyI+PHBhdGggZD0iTTE5IDVIMWEyIDIgMCAwMC0yIDJ2MTRhMiAyIDAgMDAyIDJoMThhMiAyIDAgMDAyLTJWN2EyIDIgMCAwMC0yLTJ6bTAgMTZIMVY3aDE4djE0ek0xMSAxNUw1IDl2MTBoMTRWOWwtNiA2eiIvPjwvc3ZnPg==';
                     e.target.className = 'max-h-full max-w-full object-cover';
                   }}
