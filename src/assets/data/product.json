@@ -4,7 +4,7 @@
       "name": "Caja de Redbull (12 latas)",
       "price": 15000,
       "stock": 20,
-      "image": "/public/images/redbull.jpeg",
+      "image": "https://booz-media-uploads.s3.sa-east-1.amazonaws.com/optimized/1e36e2661298fd59ae9d6d3b01588994-3x.jpeg",
       "category": "energizantes"
     },
     {
@@ -12,7 +12,7 @@
       "name": "Pack Monster (6 unidades)",
       "price": 18000,
       "stock": 15,
-      "image": "/public/images/monster.jpg",
+      "image": "https://d1ks0wbvjr3pux.cloudfront.net/fea23611-9567-4361-9b39-98c32264c187-lg.jpg",
       "category": "energizantes"
     }
   ]
