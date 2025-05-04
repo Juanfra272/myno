@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const ProductList = () => {
+const ProductDetail = () => {
   const products = [
     {
       id: 1,
@@ -72,4 +72,4 @@ const ProductList = () => {
   )
 }
 
-export default ProductDetail 
+export default ProductDetail;

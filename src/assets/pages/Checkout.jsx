@@ -1,8 +1,16 @@
 import { Link } from 'react-router-dom';
 import { useCart } from '../components/CartContext';
+import { useAuth } from '../components/AuthContext';
 import { useState } from 'react';
+import { Navigate } from 'react-router-dom';
+
 
 const Checkout = () => {
+  const { user } = useAuth();
+
+  if (!user) {
+    return <Navigate to="/login" state={{ from: '/checkout' }} replace />;
+  }
   const { 
     cart, 
     removeFromCart, 
@@ -10,6 +18,8 @@ const Checkout = () => {
     cartTotal,
     clearCart
   } = useCart();
+  
+  const { addPurchase } = useAuth();
   
   const [paymentStatus, setPaymentStatus] = useState(null);
   const [isProcessing, setIsProcessing] = useState(false);
@@ -24,7 +34,6 @@ const Checkout = () => {
     notes: ''
   });
 
-  // Calcular totales
   const shipping = cartTotal > 1000 ? 0 : 50;
   const total = cartTotal + shipping;
 
@@ -49,24 +58,39 @@ const Checkout = () => {
     return Object.keys(errors).length === 0;
   };
 
-  const handlePayment = () => {
+  const handlePayment = async () => {
     if (cart.length === 0 || !validateForm()) return;
     
     setIsProcessing(true);
     
-    // Simular procesamiento de pago
-    setTimeout(() => {
-      const isSuccess = Math.random() > 0.2; // 80% de éxito
+    try {
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      const isSuccess = Math.random() > 0.2;
       
       if (isSuccess) {
+        const purchase = {
+          items: cart.map(item => ({
+            product: item.name,
+            price: item.price,
+            quantity: item.quantity || 1,
+            size: item.size,
+            image: item.image
+          })),
+          total: total,
+          shippingInfo: shippingInfo,
+          status: 'completed'
+        };
+        
+        await addPurchase(purchase);
         setPaymentStatus('success');
         clearCart();
       } else {
         setPaymentStatus('failed');
       }
-      
+    } finally {
       setIsProcessing(false);
-    }, 2000);
+    }
   };
 
   if (paymentStatus === 'success') {
@@ -79,10 +103,10 @@ const Checkout = () => {
           <h2 className="text-2xl font-bold mb-2">¡Pago Exitoso!</h2>
           <p className="text-gray-600 mb-6">Tu pedido ha sido procesado correctamente.</p>
           <Link 
-            to="/" 
+            to="/profile" 
             className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors inline-block"
           >
-            Volver a la tienda
+            Ver mi perfil
           </Link>
         </div>
       </div>

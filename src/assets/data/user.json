@@ -1,0 +1,20 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "email": "usuario1@example.com",
+        "password": "password123",
+        "name": "Juan Pérez",
+        "phone": "+56912345678",
+        "purchases": []
+      },
+      {
+        "id": 2,
+        "email": "usuario2@example.com",
+        "password": "password123",
+        "name": "María González",
+        "phone": "+56987654321",
+        "purchases": []
+      }
+    ]
+  }
