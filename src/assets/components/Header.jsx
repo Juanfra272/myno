@@ -7,7 +7,7 @@ const Header = () => {
   const { cartCount } = useContext(CartContext); // Usa cartCount en lugar de cart
 
   return (
-    <header className="bg-gray-800 text-white py-4 sticky top-0 z-10">
+    <header className="bg-black text-white py-4 sticky top-0 z-10">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4">
         {/* Nombre del sitio */}
         <div className="text-lg font-bold">
