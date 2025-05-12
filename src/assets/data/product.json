@@ -1,18 +1,170 @@
 [
-    {
-      "id": 1,
-      "name": "Caja de Redbull (12 latas)",
-      "price": 15000,
-      "stock": 20,
-      "image": "https://booz-media-uploads.s3.sa-east-1.amazonaws.com/optimized/1e36e2661298fd59ae9d6d3b01588994-3x.jpeg",
-      "category": "energizantes"
-    },
-    {
-      "id": 2,
-      "name": "Pack Monster (6 unidades)",
-      "price": 18000,
-      "stock": 15,
-      "image": "https://d1ks0wbvjr3pux.cloudfront.net/fea23611-9567-4361-9b39-98c32264c187-lg.jpg",
-      "category": "energizantes"
+  {
+    "id": 1,
+    "name": "Caja de Redbull (12 latas)",
+    "price": 15000,
+    "stock": 20,
+    "image": "https://booz-media-uploads.s3.sa-east-1.amazonaws.com/optimized/1e36e2661298fd59ae9d6d3b01588994-3x.jpeg",
+    "category": "energizantes",
+    "description": "Pack de 12 latas de 250ml. Contiene taurina, cafeína y vitaminas B.",
+    "specs": {
+      "marca": "Redbull",
+      "sabor": "Original",
+      "tamaño": "250ml por lata"
     }
+  },
+  {
+    "id": 2,
+    "name": "Pack Monster (6 unidades)",
+    "price": 18000,
+    "stock": 15,
+    "image": "https://d1ks0wbvjr3pux.cloudfront.net/fea23611-9567-4361-9b39-98c32264c187-lg.jpg",
+    "category": "energizantes",
+    "description": "Variedad de sabores: Ultra Blue, Pipeline Punch y Mango Loco.",
+    "specs": {
+      "marca": "Monster",
+      "sabor": "Variados",
+      "tamaño": "473ml por lata"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Coca-Cola Zero (24 latas)",
+    "price": 12500,
+    "stock": 30,
+    "image": "https://i5.walmartimages.com/seo/Coca-Cola-Zero-Sugar-Sugar-Free-Soda-Pop-12-fl-oz-Cans-24-Pack_3b326608-9ff5-409d-a0de-42008993f114.b20a167b211a46171e8f6cd973bdebea.jpeg",
+    "category": "gaseosas",
+    "description": "Pack de 24 latas de 330ml. Refrescante sabor sin calorías.",
+    "specs": {
+      "marca": "Coca-Cola",
+      "sabor": "Zero",
+      "tamaño": "330ml por lata"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Agua Mineral Vital (6 botellas)",
+    "price": 4500,
+    "stock": 40,
+    "image": "https://distribuidorasantiago.cl/wp-content/uploads/2024/05/VITAL-1.6-DISPLAY-CON-GAS.png",
+    "category": "aguas",
+    "description": "Pack de 6 botellas de 1.5L. Agua purificada y mineralizada.",
+    "specs": {
+      "marca": "Vital",
+      "sabor": "Natural",
+      "tamaño": "1.5L por botella"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Jugo Watt's Naranja (1L)",
+    "price": 3500,
+    "stock": 25,
+    "image": "https://unimarc.vtexassets.com/arquivos/ids/227520/000000000401739006-UN-01.jpg?v=637909097306070000",
+    "category": "jugos",
+    "description": "Jugo 100% natural sin conservantes ni azúcar añadida.",
+    "specs": {
+      "marca": "Watt's",
+      "sabor": "Naranja",
+      "tamaño": "1L"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Cerveza Corona (12 unidades)",
+    "price": 22000,
+    "stock": 18,
+    "image": "https://unimarc.vtexassets.com/arquivos/ids/243482/000000000000572824-UN-01.jpg?v=638585743902730000",
+    "category": "cervezas",
+    "description": "Pack de 12 botellas de 355ml. Incluye cuñas de limón.",
+    "specs": {
+      "marca": "Corona",
+      "sabor": "Clásica",
+      "tamaño": "355ml por botella"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Té Verde Lipton (20 bolsitas)",
+    "price": 5500,
+    "stock": 35,
+    "image": "https://www.prisa.cl/media/cache/attachment/filter/product_gallery_main/b6b1adc76b36bd6a7f81344215e93277/19992/Prisa-62e2a850649aa970510287.jpeg",
+    "category": "tés",
+    "description": "Té verde premium con antioxidantes naturales.",
+    "specs": {
+      "marca": "Lipton",
+      "sabor": "Té Verde",
+      "tamaño": "20 bolsitas"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Café Molido Nescafé (500g)",
+    "price": 8900,
+    "stock": 22,
+    "image": "https://bisonte.cl/wp-content/uploads/2024/11/Aceite-vegetal-900-ml-48.png",
+    "category": "cafés",
+    "description": "Café 100% arábica, tostado y molido.",
+    "specs": {
+      "marca": "Nescafé",
+      "sabor": "Tradicional",
+      "tamaño": "500g"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Sprite Zero (2.5L)",
+    "price": 2800,
+    "stock": 20,
+    "image": "https://www.distribuidoralamartina.cl/wp-content/uploads/2021/04/sprite-zero25lts-min.png",
+    "category": "gaseosas",
+    "description": "Refresco lima-limón sin azúcar ni calorías.",
+    "specs": {
+      "marca": "Sprite",
+      "sabor": "Lima-Limón",
+      "tamaño": "2.5L"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Powerade Morado (1L)",
+    "price": 1800,
+    "stock": 30,
+    "image": "https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750105532937L2.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+    "category": "deportivas",
+    "description": "Bebida isotónica con electrolitos y vitaminas.",
+    "specs": {
+      "marca": "Powerade",
+      "sabor": "Uva",
+      "tamaño": "1L"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Pepsi Black (24 latas)",
+    "price": 13500,
+    "stock": 15,
+    "image": "https://http2.mlstatic.com/D_NQ_NP_741618-MLC69980561358_062023-O-pepsi-zero-sin-azucar-350ml-24-pack.webp",
+    "category": "gaseosas",
+    "description": "Variedad sin azúcar con sabor intenso.",
+    "specs": {
+      "marca": "Pepsi",
+      "sabor": "Original",
+      "tamaño": "330ml por lata"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Vodka Absolut (750ml)",
+    "price": 18900,
+    "stock": 10,
+    "image": "https://jumbocl.vtexassets.com/arquivos/ids/302978/Vodka-Absolut-Original-40%C2%B0-750-cc.jpg?v=638776376498530000",
+    "category": "licores",
+    "description": "Vodka premium destilado 5 veces.",
+    "specs": {
+      "marca": "Absolut",
+      "sabor": "Original",
+      "tamaño": "750ml"
+    }
+  }
 ]

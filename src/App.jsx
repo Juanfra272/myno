@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './assets/components/Header';
 import { ProductList } from './assets/components/ProductList';
+import ProductDetail from './assets/pages/ProductDetail'; // Nuevo componente importado
 import Cart from './assets/components/Cart';
 import Profile from './assets/components/Profile';
 import Checkout from './assets/pages/Checkout';
@@ -20,6 +21,8 @@ function App() {
               <Routes>
                 {/* Rutas públicas */}
                 <Route path="/" element={<ProductList />} />
+                <Route path="/products" element={<ProductList />} />
+                <Route path="/products/:id" element={<ProductDetail />} /> {/* Nueva ruta */}
                 <Route path="/login" element={<Login />} />
                 
                 {/* Rutas protegidas */}
